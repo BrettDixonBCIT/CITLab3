@@ -26,14 +26,19 @@
         }
     </style>
     <body>
-        <h3>First mod</h3>
-        <h3>Second mod</h3>
-        <h3>Third mod</h3>
-        <h3>Fourth mod</h3>
-        <h3>Fifth mod</h3>
-        
         <div id="display">
             <button id="button">COOL STUFF</button>
         </div>
+        
+        <script>
+            var myBut = document.getElementById("button");
+            var disp = document.getElementById("display");
+            
+            myBut.onclick = function(){
+                disp.style.backgroundColor = '#AAA';  /* Make sure to use the quotations */
+                myBut.style.width = "50px";
+                myBut.style.height = "200px";
+            }
+        </script>
     </body>
 </html>
